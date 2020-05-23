@@ -119,27 +119,73 @@ class Header extends Component {
                     </g>
                   </svg>
                 </button>
-                { isOpenSidebar && <Fragment> <div className = 'site-nav-backdrop'></div></Fragment> }
-                <div className = { `site-navbar ${isOpenSidebar ? 'is-open' : ''}`}></div>
-                <ul className = { `site-nav site-sidebar ${isOpenSidebar ? 'is-open' : ''}` }>
-                    <li className = 'site-nav__list'>
+                {isOpenSidebar && (
+                  <Fragment>
+                    {' '}
+                    <div className='site-nav-backdrop'></div>
+                  </Fragment>
+                )}
+                <div
+                  className={`site-navbar ${isOpenSidebar ? 'is-open' : ''}`}
+                ></div>
+                <ul
+                  className={`site-nav site-sidebar ${
+                    isOpenSidebar ? 'is-open' : ''
+                  }`}
+                >
+                    <li className='site-nav__list'>
                         <Link
-                            onClick = { this.onHandleClickLink }
-                            className = 'site-nav__link--active'
-                            to = 'project'
-                            href = '#project'
-                            spy = {true}
-                            smooth = {true}
-                            offset = {-20}
-                            duration = {500}
+                            onClick={this.onHandleClickLink}
+                            className='site-nav__link--active'
+                            to='project'
+                            href='#project'
+                            spy={true}
+                            smooth={true}
+                            offset={-20}
+                            duration={500}
                         >
                             Projects
                         </Link>
                     </li>
+                    <li className='site-nav__list'>
+                        <Link
+                            onClick={this.onHandleClickLink}
+                            className='site-nav__link--active'
+                            to='skills'
+                            href='#skills'
+                            spy={true}
+                            smooth={true}
+                            offset={-30}
+                            duration={500}
+                        >
+                            Skills
+                        </Link>
+                    </li>
+                    <li className='site-nav__list'>
+                        <Link
+                            onClick={this.onHandleClickLink}
+                            className='site-nav__link--active'
+                            to='experience'
+                            href='#experience'
+                            spy={true}
+                            smooth={true}
+                            offset={-30}
+                            duration={500}
+                        >
+                            Experience
+                        </Link>
+                    </li>
+                    <li className = 'site-nav__list'>
+                        <Link
+                        >
+                            Email: brian.ulatowski@gmail.com
+                        </Link>                        
+                        
+                  </li>
                 </ul>
               </div>
             </header>
           </div>
         );
-    }
-}
+    };
+};
