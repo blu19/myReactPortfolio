@@ -54,3 +54,5 @@ const Skills = (props) => {
         </section>
     )
 }
+
+export default Skills;
