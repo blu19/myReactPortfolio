@@ -187,10 +187,10 @@ class Header extends Component {
                                 Email: brian.ulatowski@gmail.com
                             </Link>                                                    
                         </li>
-                </ul>
-              </div>
+                    </ul>
+                </div>
             </header>
-          </div>
+        </div>
         );
     };
 };
