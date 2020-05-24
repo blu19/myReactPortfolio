@@ -1,32 +1,27 @@
-import React, { Fragment, Component } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects/Projects';
-import ProjectList from './components/Projects/ProjectList';
-import ProjectInfo from './components/Projects/ProjectInfo';
-import Skills from './components/Skills';
-import Footer from './components/Footer';
-import portfolioData from './data/portfolio';
-import Modal from './components/Modal/Modal';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Navbar from './components/Nav';
+import Portfolio from './components/Portfolio';
+import Resume from './components/ResumeCV';
+import Contact from './components/Contact';
 import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='App'>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/contact' component={Contact} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
