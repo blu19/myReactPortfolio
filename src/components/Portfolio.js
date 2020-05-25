@@ -31,7 +31,7 @@ function Portfolio() {
                   View Code <i className='fab fa-github' />
                 </a>{' '}
                 <br />
-                <a href='javascript:void(0)' className='cta expandDetails'>
+                {/* <a href='javascript:void(0)' className='cta expandDetails'>
                   More info
                   <br />
                   <div className='arrowDown'>
@@ -40,7 +40,7 @@ function Portfolio() {
                   <div className='arrowUp'>
                     <i className='fas fa-chevron-up' />
                   </div>
-                </a>
+                </a> */}
               </div>
               <div
                 className='portfolio-img'
@@ -135,7 +135,7 @@ function Portfolio() {
                   View Github <i className='fab fa-github' />
                 </a>{' '}
                 <br />
-                <a href='javascript:void(0)' className='cta expandDetails'>
+                {/* <a href='javascript:void(0)' className='cta expandDetails'>
                   More info
                   <br />
                   <div className='arrowDown'>
@@ -144,7 +144,7 @@ function Portfolio() {
                   <div className='arrowUp'>
                     <i className='fas fa-chevron-up' />
                   </div>
-                </a>
+                </a> */}
               </div>
               <div className='break' />
               <div className='portfolio-long'>

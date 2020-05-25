@@ -1,54 +1,38 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     return (
-        <div>
-            <nav className='navbar'>
-            <span className='navbar-toggle' id='js-navbar-toggle'>
-                <i className='fas fa-bars' />
-            </span>
-            <ul className='main-nav' id='js-menu'>
-                <li>
-                <a href='index.html' className='nav-links'>
-                    Home
-                </a>
-                </li>
-                <li>
-                <a href='#about' className='nav-links'>
-                    About
-                </a>
-                </li>
-                <li>
-                <a href='#services' className='nav-links'>
-                    Services
-                </a>
-                </li>
-                <li>
-                <a href='#portfolio' className='nav-links'>
-                    Portfolio
-                </a>
-                </li>
-                <li>
-                <a href='#personal' className='nav-links'>
-                    Personal
-                </a>
-                </li>
-                <li>
-                <a
-                    href='assets/misc/BrianUlatowski2020.pdf'
-                    className='nav-links'
-                >
-                    Resume/CV
-                </a>
-                </li>
-                <li>
-                <a href='#contact' className='nav-links'>
-                    Contact
-                </a>
-                </li>
-            </ul>
-            </nav>
-        </div>
+      <div>
+        <nav className='navbar'>
+          <span className='navbar-toggle' id='js-navbar-toggle'>
+            <i className='fas fa-bars' />
+          </span>
+          <ul className='main-nav' id='js-menu'>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/about'>About</Link>
+            </li>
+            <li>
+              <Link to='/services'>Services</Link>
+            </li>
+            <li>
+              <Link to='/portfolio'>Portfolio</Link>
+            </li>
+            <li>
+              <Link to='/personal'>Personal</Link>
+            </li>
+            <li>
+              <Link to='assets/misc/BrianUlatowski2020.pdf'>Resume/CV</Link>
+            </li>
+            <li>
+              <Link to='/contact'>Contact</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     );
 }
 

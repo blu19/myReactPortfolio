@@ -22,9 +22,8 @@ function App() {
             <Route exact path='/services' component={Services} />
             <Route exact path='/portfolio' component={Portfolio} />
             <Route exact path='/personal' component={Personal} />
-            <Route exact path='/resume' component={ResumeCV} />
+            <Route exact path='/resumecv' component={ResumeCV} />
             <Route exact path='/contact' component={Contact} />
-            <Route exact path='/footer' component={Footer} />
           </Switch>
           <Footer />
         </div>
