@@ -1,8 +1,8 @@
 import React from 'react';
+import Footer from './Footer';
 
 function About() {
     return (
-      <div>
         <section id='about' className='about'>
           <div className='container'>
             <div
@@ -64,8 +64,8 @@ function About() {
               </div>
             </div>
           </div>
+          <Footer />
         </section>
-      </div>
     );
 }
 
