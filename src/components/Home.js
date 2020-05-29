@@ -14,7 +14,7 @@ function Home() {
                     data-words='["Developer"]'
                     />
                 </h6>
-                <a className='landingBtn' href='#portfolio'>
+                <a className='landingBtn' href='/portfolio'>
                     <p> See my work! </p>
                 </a>
             </div>

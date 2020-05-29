@@ -1,19 +1,23 @@
 import React from 'react';
-import { Document } from 'react-pdf';
+import image1 from '../imagesFront/BrianLiangUlatowski.jpeg';
 
 function ResumeCV() {
     return (
       <div>
-        <Document>
-            <a
+        <section className='resume' id='resume'>
+          <div className='container'>
+            <div className='section-heading'>
+              <h1>Resume/CV</h1>
+                <img src={ image1 } />
+              <a
                 target='_blank'
-                href='./BrianUlatowski2020.pdf'
+                href='./BrianLiangUlatowski'
                 className='nav-links'
                 style={{ color: 'red' }}
-            >
-                Resume/CV
-            </a>
-        </Document>
+              ></a>
+            </div>
+          </div>
+        </section>
       </div>
     );
 }
