@@ -8,13 +8,7 @@ function ResumeCV() {
           <div className='container'>
             <div className='section-heading'>
               <h1>Resume/CV</h1>
-                <img src={ image1 } />
-              <a
-                target='_blank'
-                href='./BrianLiangUlatowski'
-                className='nav-links'
-                style={{ color: 'red' }}
-              ></a>
+                <img src={ image1 } alt=''/>
             </div>
           </div>
         </section>

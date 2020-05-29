@@ -1,7 +1,9 @@
 import React from 'react';
+import profileImg from '../imagesFront/profile.jpg'
 
 function About() {
     return (
+      <div>
         <section id='about' className='about'>
           <div className='container'>
             <div
@@ -9,7 +11,7 @@ function About() {
               data-aos='fade-in'
               data-aos-delay={100}
             >
-              <img src='assets/images/profile.jpg' alt='' />
+              <img src={ profileImg } alt='' />
             </div>
             <div
               className='about-details'
@@ -64,6 +66,7 @@ function About() {
             </div>
           </div>
         </section>
+      </div>
     );
 }
 
