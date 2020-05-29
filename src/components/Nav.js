@@ -25,7 +25,7 @@ function Nav() {
               <Link to='/personal'>Personal</Link>
             </li>
             <li>
-              <Link to='/misc/BrianUlatowski2020.pdf'>Resume/CV</Link>
+              <Link to='/resumecv'>Resume/CV</Link>
             </li>
             <li>
               <Link to='/contact'>Contact</Link>

@@ -5,25 +5,31 @@ import projects from '../../src/projects.json';
 class Portfolio extends Component {
   // Setting this.state.projects to the projects json array
   state = {
-    projects,
+    projects
   };
 
   // Map over this.state.projects and render a ProjectCard component for each project object
   render() {
     return (
       <div>
-        {this.state.projects.map((project) => (
-          <ProjectCard
-            removeProject={this.removeProject}
-            id={project.id}
-            key={project.id}
-            name={project.name}
-            description={project.description}
-            image={project.image}
-            github={project.github}
-            site={project.site}
-          />
-        ))}
+        <section className='portfolio' id='portfolio'>
+          <div className='container'>
+            <div className='section-heading'>
+              <h1>Portfolio</h1>
+              {this.state.projects.map((project) => (
+                <ProjectCard
+                  id={project.id}
+                  key={project.id}
+                  name={project.name}
+                  description={project.description}
+                  image={project.image}
+                  github={project.github}
+                  site={project.site}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
